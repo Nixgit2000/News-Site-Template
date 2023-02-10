@@ -11,7 +11,6 @@ return (
 <div id="grid">
 <div id="button1">WORLD NEWS</div><div id="button2">FINANCE</div><div id="button3">POLITICS</div><div id="button4">ECONOMICS</div><div id="button5">BUSINESS</div>
 </div>
-
 <div class="container">
 <div id="pic4"></div>
 <div id="pic3"></div>
