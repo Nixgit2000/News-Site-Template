@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+* { 
+  border:0;
+  margin:0;
+  caret-color: transparent;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+	display: none; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: absolute;
+  left: auto;
+  top: 0px;
+  left: 0vw;
+
+}
+@font-face { font-family:NYT; src: url('../fonts/Chomsky-8MOa2.otf'); } 
+
+#header {
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://www.mckinsey.com/spContent/bespoke/netzero-sector-page/desktop-building.jpg");
+  background-position: 0% 0%;
+  width: 100vw;
+  height: 20vh;
+  color: white;
+  font-family: NYT;
+  font-size:10vh;
+  text-shadow: 3px 3px black;
+  animation: scroll1 300s infinite;
+}
+
+@keyframes scroll1 {
+  0% {background-position: 0% 0%;}
+  50% {background-position: 100% 100%;}
+  100% {background-position: 0% 0%;}
+}
+#spacer-container {
+
+  position: relative;
+  top: 23vh;
+  height: 12vh;
+}
+#spacer1{
+  position: fixed;
+  font-family: NYT;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height:0vh;
+  background-color: white;
   color: white;
 }
+#spacer{
+  font-family: NYT;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 10.5vh;
+  background-color: black;
+  color: white;
+}
+.container {
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  top: 22vh;
 
-.App-link {
-  color: #61dafb;
+  overflow: hidden;
+  height: 712vh;
+  width:100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+  grid-auto-rows: 30vh;
+  gap: 1vh;
+  grid-auto-flow: dense;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#pic {
+  grid-row: span 1;
+  background-color: coral;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  animation: scroll2 200s infinite;
+  background-image: url("https://g.foolcdn.com/editorial/images/718993/federal-reserve-getty.jpg");
+}
+
+#pic2 {
+  grid-column: span 2;
+  background-color: pink;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  animation: scroll2 200s infinite;
+  background-image: url("https://www.brinknews.com/wp-content/uploads/2022/05/51788835106_74ec7e4a33_k.jpg");
+}
+
+#pic3 {
+  grid-column: span 2;
+  background-color: aqua;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  animation: scroll2 200s infinite;
+  background-image: url("https://i0.wp.com/asiatimes.com/wp-content/uploads/2020/06/000_1SN339.jpg?fit=1024%2C681&ssl=1");
+}
+#pic4 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: purple;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  animation: scroll2 400s infinite;
+  background-image: url("https://www.euractiv.com/wp-content/uploads/sites/2/2020/06/w_55613250-800x450.jpg");
+}
+
+
+@keyframes scroll2 {
+  0% {background-position: 50% 50%;}
+  25% {background-position: 100% 100%;}
+  50% {background-position: 50% 50%;}
+  75% {background-position: 0% 0%;}
+  100% {background-position: 0% 0%;}
+}
+
+#grid {
+  position: relative;
+  z-index: 100;
+  top: 21vh;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  width: 100vw;
+  gap: 1vh;
+  background-color: white;
+  z-index: 1;
+}
+
+#button1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  grid-column: 1 / span 3;
+  background-color: black;
+  height: 100%;
+}
+#button2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  grid-column: 4 / span 3;
+  background-color: black;
+  height: 10vh;
+}
+#button3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  grid-column: 7 / span 3;
+  background-color: black;
+  height: 10vh;
+}
+#button4 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  grid-column: 10 / span 3;
+  background-color: black;
+  height: 10vh;
+}
+#button5 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  grid-column: 13 / span 3;
+  background-color: black;
+  height: 10vh;
 }
