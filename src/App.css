@@ -69,8 +69,9 @@ body {
   align-items: center;
   position: relative;
   height: 10.5vh;
-  background-color: black;
+  background: linear-gradient(rgb(182, 182, 182), rgb(85, 85, 85));
   color: white;
+  text-shadow: 1px 1px black;
 }
 .container {
   background-color: white;
@@ -144,8 +145,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  animation: scroll2 400s infinite;
-  background-image: url("https://www.euractiv.com/wp-content/uploads/sites/2/2020/06/w_55613250-800x450.jpg");
+  animation: scroll2 100s infinite;
+  background-image: url("https://images.everydayhealth.com/images/hurricane-prep-trips-experts-say-1440x810.jpg");
 }
 
 
@@ -193,8 +194,12 @@ z-index: 10;
   align-items: center;
   color: white;
   grid-column: 1 / span 3;
-  background-color: black;
+  background: linear-gradient(rgb(182, 182, 182), rgb(85, 85, 85));
   height: 10vh;
+  text-shadow: 1px 1px black;
+}
+#button1:hover {
+  background: linear-gradient(rgb(85, 85, 85), rgb(182, 182, 182));
 }
 #button2 {
   font-family: 'Times New Roman', Times, serif;
@@ -204,8 +209,12 @@ z-index: 10;
   align-items: center;
   color: white;
   grid-column: 4 / span 3;
-  background-color: black;
+  background: linear-gradient(rgb(182, 182, 182), rgb(85, 85, 85));
   height: 10vh;
+  text-shadow: 1px 1px black;
+}
+#button2:hover {
+  background: linear-gradient(rgb(85, 85, 85), rgb(182, 182, 182));
 }
 #button3 {
   font-family: 'Times New Roman', Times, serif;
@@ -215,8 +224,12 @@ z-index: 10;
   align-items: center;
   color: white;
   grid-column: 7 / span 3;
-  background-color: black;
+  background: linear-gradient(rgb(182, 182, 182), rgb(85, 85, 85));
   height: 10vh;
+  text-shadow: 1px 1px black;
+}
+#button3:hover {
+  background: linear-gradient(rgb(85, 85, 85), rgb(182, 182, 182));
 }
 #button4 {
   font-family: 'Times New Roman', Times, serif;
@@ -226,8 +239,12 @@ z-index: 10;
   align-items: center;
   color: white;
   grid-column: 10 / span 3;
-  background-color: black;
+  background: linear-gradient(rgb(182, 182, 182), rgb(85, 85, 85));
   height: 10vh;
+  text-shadow: 1px 1px black;
+}
+#button4:hover {
+  background: linear-gradient(rgb(85, 85, 85), rgb(182, 182, 182));
 }
 #button5 {
   font-family: 'Times New Roman', Times, serif;
@@ -237,6 +254,11 @@ z-index: 10;
   align-items: center;
   color: white;
   grid-column: 13 / span 3;
-  background-color: black;
+  background: linear-gradient(rgb(182, 182, 182), rgb(85, 85, 85));
   height: 10vh;
+  text-shadow: 1px 1px black; 
+  
+}
+#button5:hover {
+  background: linear-gradient(rgb(85, 85, 85), rgb(182, 182, 182));
 }

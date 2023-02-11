@@ -1,4 +1,4 @@
-import './jumblePics'
+
 import './App.css';
 
 
