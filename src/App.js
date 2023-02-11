@@ -1,4 +1,4 @@
-
+import './jumblePics'
 import './App.css';
 
 
@@ -16,9 +16,9 @@ return (
 </div>
 
 <div className="container">
-<div id="pic4"></div>
-<div id="pic3"></div>
-<div id="pic2"></div>
+<div id="pic5"></div>
+<div id="pic"></div>
+<div id="pic3a"></div>
 <div id="pic2"></div>
 <div id="pic"></div>
 <div id="pic2"></div>

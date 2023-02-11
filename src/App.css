@@ -118,8 +118,27 @@ body {
   animation: scroll2 200s infinite;
   background-image: url("https://i0.wp.com/asiatimes.com/wp-content/uploads/2020/06/000_1SN339.jpg?fit=1024%2C681&ssl=1");
 }
+#pic3a {
+  grid-row: span 2;
+  background-color: aqua;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  animation: scroll2 200s infinite;
+  background-image: url("https://i0.wp.com/asiatimes.com/wp-content/uploads/2020/06/000_1SN339.jpg?fit=1024%2C681&ssl=1");
+}
 #pic4 {
   grid-column: span 2;
+  grid-row: span 2;
+  background-color: purple;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  animation: scroll2 400s infinite;
+  background-image: url("https://www.euractiv.com/wp-content/uploads/sites/2/2020/06/w_55613250-800x450.jpg");
+}
+#pic5 {
+  grid-column: span 4;
   grid-row: span 2;
   background-color: purple;
   background-repeat: no-repeat;
