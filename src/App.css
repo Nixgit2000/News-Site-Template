@@ -262,3 +262,6 @@ z-index: 10;
 #button5:hover {
   background: linear-gradient(rgb(85, 85, 85), rgb(182, 182, 182));
 }
+#button5:click {
+  background: linear-gradient(rgb(85, 85, 85), rgb(182, 182, 182));
+}
